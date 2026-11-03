@@ -1,1 +1,61 @@
 
+/* Логотип: базовый размер — для мобильных */
+.logo-img {
+  max-height: 40px;
+  width: auto;
+}
+
+/* Заголовок сайта */
+.site-title {
+  font-size: 1.25rem;
+}
+
+/* Тонкая рамка на карточках — для читаемости на светлом фоне */
+.card {
+  border: 1px solid #cfe2f3;
+}
+
+/* Расписание: компактная типографика в таблице */
+.schedule-table {
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+
+.schedule-table th,
+.schedule-table td {
+  text-align: center;
+}
+
+/* Ячейки с двумя предметами: прижимаем текст влево */
+.schedule-table td.p-0 {
+  text-align: left;
+}
+
+/* Плавный hover на ссылках меню (btn-outline-light уже даёт эффект,
+   здесь только плавность) */
+#menu .btn {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* ---------- Планшеты и выше (md, ≥768px) ---------- */
+@media (min-width: 768px) {
+  .logo-img {
+    max-height: 56px;
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+
+  .schedule-table {
+    font-size: 0.9rem;
+  }
+}
+
+/* ---------- Десктоп (lg, ≥992px) ---------- */
+@media (min-width: 992px) {
+  .schedule-table {
+    font-size: 1rem;
+  }
+}
