@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Задание 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="header">
+    <div class="container header-inner">
+      <div class="logo"><img src="https://avatars.mds.yandex.net/i?id=a283abc3bae72ce7ab9987b6dee9ae04d1fe76c2-10702414-images-thumbs&n=13" alt="Логотип"></div>
+      <div class="header-content">
+        <div class="site-title">Задание 3</div>
+        <nav id="menu">
+          <a href="#list">Список гиперссылок</a>
+          <a href="#table">Расписание ПМ21/2</a>
+          <a href="#form">Форма</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+
+      <section id="table" class="block">
+        <h2>Расписание ПМ21/2</h2>
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Пара</th>
+                    <th>Понедельник</th>
+                    <th>Вторник</th>
+                    <th>Среда</th>
+                    <th>Четверг</th>
+                    <th>Пятница</th>
+                    <th>Суббота</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="6">КСРС</td>
+                    <td class="split">
+                        <div class="top">Комп. сети лаб</div>
+                        <div class="bottom"></div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td>Матан лекция</td>
+                    <td>Матан лаб</td>
+                    <td></td>
+                    <td>Иностранный яз лаб</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td>Диффуры лаб</td>
+                    <td>Диффуры лекция</td>
+                    <td>Физра</td>
+                    <td>Матан лаб</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="split">
+                        <div class="top">Экономика лекция</div>
+                        <div class="bottom">Экономика п/з</div>
+                    </td>
+                    <td>WEB лаб</td>
+                    <td>Физика лекция</td>
+                    <td class="split">
+                        <div class="top">Комп. сети лекция</div>
+                        <div class="bottom">Матан лаб</div>
+                    </td>
+                    <td>ООП лек</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>WEB лекция</td>
+                    <td>ООП лаб>
+                    <td></td>
+                    <td>Физика п/з</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Матан лаб</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+      </section>
+
+      <section id="list" class="content-block">
+        <h2>Список гиперссылок</h2>
+
+        <ul>
+          <li><a href="https://kubsu.ru">1) Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+          <li><a href="https://kubsu.ru">2) Абсолютная гиперссылка на kubsu.ru (https)</a></li>
+          <li>
+            <a href="https://kubsu.ru">
+              <img src="https://avatars.mds.yandex.net/i?id=a283abc3bae72ce7ab9987b6dee9ae04d1fe76c2-10702414-images-thumbs&n=13"
+                   alt="3) Ссылка-изображение на kubsu.ru">
+            </a>
+          </li>
+          <li><a href="/index.php">4) Сокращённая ссылка на внутреннюю страницу</a></li>
+          <li><a href="/">5) Сокращённая ссылка на главную страницу</a></li>
+          <li><a href="#form">6) Ссылка на фрагмент текущей страницы</a></li>
+          <li><a href="https://kubsu.ru/?param1=one&param2=two&param3=three">7) Ссылка с тремя параметрами в URL</a></li>
+          <li><a href="https://kubsu.ru/?id=42">8) Ссылка с параметром id в URL</a></li>
+          <li><a href="page.html">9) Относительная ссылка на страницу в текущем каталоге</a></li>
+          <li><a href="about/index.html">10) Относительная ссылка на страницу в каталоге about</a></li>
+          <li><a href="../parent.html">11) Относительная ссылка на страницу в каталоге уровнем выше</a></li>
+          <li><a href="../../grandparent.html">12) Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+          <li><p>13) Контекстная ссылка: узнайте больше о <a href="https://kubsu.ru/">сайте КубГУ</a></p></li>
+          <li><a href="https://en.wikipedia.org/wiki/HTML#History">14) Ссылка на фрагмент страницы стороннего сайта</a></li>
+          <li>
+            <p>15) Карта ссылок: прямоугольная и круглая области картинки</p>
+            <img src="https://avatars.mds.yandex.net/i?id=a283abc3bae72ce7ab9987b6dee9ae04d1fe76c2-10702414-images-thumbs&n=13"
+                 alt="Картинка с картой ссылок" width="300" height="200" usemap="#imagemap">
+            <map name="imagemap">
+              <area shape="rect" coords="0,0,150,200" href="https://kubsu.ru/"
+                    alt="Прямоугольная область — переход на сайт КубГУ">
+              <area shape="circle" coords="225,100,70" href="https://kubsu.ru/"
+                    alt="Круглая область — переход на сайт КубГУ">
+            </map>
+          </li>
+          <li><a href="">16) Ссылка с пустым href</a></li>
+          <li><a>17) Ссылка без href</a></li>
+          <li><a href="https://kubsu.ru/" rel="nofollow">18) Ссылка, по которой запрещён переход поисковикам</a></li>
+          <li>
+            <a href="https://kubsu.ru/" rel="nofollow">19) Ссылка, запрещённая для индексации поисковиками</a>
+          </li>
+          <li>
+            <p>20) Нумерованный список ссылок с подписями title</p>
+            <ol>
+              <li><a href="https://kubsu.ru/" title="Официальный сайт Кубанского государственного университета">КубГУ</a></li>
+              <li><a href="https://www.kubsu.ru/ru/university" title="Об университете">Об университете</a></li>
+              <li><a href="https://www.kubsu.ru/ru/education" title="Образование в КубГУ">Образование</a></li>
+              <li><a href="https://www.kubsu.ru/ru/science" title="Наука в КубГУ">Наука</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="ftp://student:qwerty123@ftp.example.com/files/lecture.zip">
+              21) Ссылка на файл на FTP-сервере с авторизацией (логин:пароль@хост)
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="form" class="content-block">
+        <h2>Форма</h2>
+
+        <form action="#" method="post">
+          <p>
+            <label for="fio">ФИО:</label><br>
+            <input type="text" id="fio" name="fio" placeholder="Щербина Евгений Леонидович" required>
+          </p>
+
+          <p>
+            <label for="phone">Телефон:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (918) 247-85-39">
+          </p>
+
+          <p>
+            <label for="email">Почта:</label><br>
+            <input type="email" id="email" name="email" placeholder="example11@example.com">
+          </p>
+
+          <p>
+            <label for="birthdate">День рождения:</label><br>
+            <input type="date" id="birthdate" name="birthdate">
+          </p>
+
+          <fieldset>
+            <legend>Пол:</legend>
+            <label><input type="radio" name="gender" value="male"> Мужской</label>
+            <label><input type="radio" name="gender" value="female"> Женский</label>
+          </fieldset>
+
+          <p>
+            <label for="langs">Любимый язык программирования (можно выбрать несколько, Ctrl+клик):</label><br>
+            <select id="langs" name="langs[]" multiple size="11">
+              <option value="pascal">Pascal</option>
+              <option value="c">C</option>
+              <option value="cpp">C++</option>
+              <option value="javascript">JavaScript</option>
+              <option value="php">PHP</option>
+              <option value="python">Python</option>
+              <option value="java">Java</option>
+              <option value="haskell">Haskell</option>
+              <option value="clojure">Clojure</option>
+              <option value="prolog">Prolog</option>
+              <option value="scala">Scala</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="bio">Биография:</label><br>
+            <textarea id="bio" name="bio" rows="6" cols="50" placeholder="Расскажите немного о себе..."></textarea>
+          </p>
+
+          <p>
+            <label><input type="checkbox" name="contract" value="yes"> С контрактом ознакомлен(а)</label>
+          </p>
+
+          <p>
+            <button type="submit">Сохранить</button>
+          </p>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      &copy; Щербина Евгений
+    </div>
+  </footer>
+
+</body>
+</html>
